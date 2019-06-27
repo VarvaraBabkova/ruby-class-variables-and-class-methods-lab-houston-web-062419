@@ -24,6 +24,7 @@ class Song
   end
 
   def self.genre_count
+    res = {}
     @@genres.uniq.each {|g| res[g] = 0}
     @@genres.each {|g| res[g] += 1}
     return res
