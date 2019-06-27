@@ -8,7 +8,7 @@ class Song
     @@artists << artist
     @@artists.uniq!
 
-    @count += 1
+    @@count += 1
 
     (@@genres << genre).uniq!
 
