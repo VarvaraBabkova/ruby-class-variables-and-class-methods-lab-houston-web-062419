@@ -24,7 +24,8 @@ class Song
   end
 
   def self.genre_count
-    @@genres.uniq.size
+    @@genres.uniq.each {|g| res[g] = 0}
+    @@genres.each {|g| res.find(g) += 1}
   end
 
   def self.artist_count
