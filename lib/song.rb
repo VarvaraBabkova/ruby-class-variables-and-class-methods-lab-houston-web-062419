@@ -33,7 +33,10 @@ class Song
   def self.artist_count
     res = {}
     @@artists.uniq.each {|g| res[g] = 0}
-    @@artists.each {|g| res[g] += 1}
+    @@artists.each {|g| 
+      res[g] ||= 1
+      res[g] += 1
+    }
     return res  end
 
   def self.artists
