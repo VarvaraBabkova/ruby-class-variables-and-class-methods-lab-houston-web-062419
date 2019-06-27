@@ -24,17 +24,17 @@ class Song
   end
 
   def self.genre_count
-    @@genres.size
+    @@genres.uniq.size
   end
 
   def self.artist_count
-    @@artists.size
+    @@artists.uniq.size
   end
 
   def self.artists
     @@artists.uniq
   end
-  
+
   def self.genres
     @@genres.uniq
   end
