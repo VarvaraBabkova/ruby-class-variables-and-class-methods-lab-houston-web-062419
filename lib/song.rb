@@ -31,8 +31,10 @@ class Song
   end
 
   def self.artist_count
-    @@artists.uniq.size
-  end
+    res = {}
+    @@artists.uniq.each {|g| res[g] = 0}
+    @@artists.each {|g| res[g] += 1}
+    return res  end
 
   def self.artists
     @@artists.uniq
