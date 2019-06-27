@@ -10,10 +10,9 @@ class Song
 
     @count += 1
 
-    @@genres << genre
-    @@genres.uniq!
+    (@@genres << genre).uniq!
 
-    
+
   end
 
 end
