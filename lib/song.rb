@@ -10,7 +10,7 @@ class Song
     @name = name
     @genre = genre
     @artist = artist
-    
+
     @@artists << artist
     @@artists.uniq!
 
