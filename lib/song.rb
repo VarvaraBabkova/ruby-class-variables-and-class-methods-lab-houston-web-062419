@@ -12,7 +12,7 @@ class Song
     @artist = artist
 
     @@artists << artist
-    @@artists.uniq!
+    ##@@artists.uniq!
 
     @@count += 1
 
