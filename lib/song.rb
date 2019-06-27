@@ -27,5 +27,9 @@ class Song
     @@genres.size
   end
 
+  def self.artist_count
+    @@artists.size
+  end
+
 
 end
