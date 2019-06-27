@@ -16,7 +16,7 @@ class Song
 
     @@count += 1
 
-    (@@genres << genre).uniq!
+    @@genres << genre
 
 
   end
